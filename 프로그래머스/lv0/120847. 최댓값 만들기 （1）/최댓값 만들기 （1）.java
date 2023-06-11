@@ -13,7 +13,7 @@ class Solution {
                 }
             }
         }
-        answer = numbers[len - 1] * numbers[len -2];
+        answer = numbers[len - 1] * numbers[len - 2];
         return answer;
     }
 }
