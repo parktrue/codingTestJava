@@ -17,15 +17,15 @@ class Solution {
         
         String azStr = new String(az);
         String AZStr = new String(AZ);
-        String atoZ = AZStr + azStr;
+        String AtoZstr = AZStr + azStr;
         
         int len = my_string.length();
         int[] answer = new int[52];
-        char[] atoZChar = atoZ.toCharArray();
+        char[] AtoZChar = AtoZstr.toCharArray();
         char[] myChar = my_string.toCharArray();
         for (int i = 0; i < 52; i++) {
             for (int j = 0; j < len; j++) {
-                if (atoZChar[i] == myChar[j]) {
+                if (AtoZChar[i] == myChar[j]) {
                     answer[i]++;
                 }
             }
