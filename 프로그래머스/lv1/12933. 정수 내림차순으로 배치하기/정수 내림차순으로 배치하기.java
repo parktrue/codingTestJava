@@ -15,7 +15,7 @@ class Solution {
         }
         
         String nStr = new String(nChar);
-        long answer = Long.parseLong(nStr);
+        long answer = Integer.parseInt(nStr);
         return answer;
     }
 }
