@@ -4,14 +4,14 @@ class Solution {
         char[] sChar = s.toCharArray();
         
         for (int i = 0; i < len; i++) {
-            if (sChar[i] >= 97 && sChar[i] <= 122) {
-                if (sChar[i] + n >= 123) {
-                    sChar[i] += (-26 + n - n);
+            if (sChar[i] >= 'a' && sChar[i] <= 'z') {
+                if (sChar[i] + n > 'z') {
+                    sChar[i] += -26;
                 }
                 sChar[i] += n;
-            } else if (sChar[i] >= 65 && sChar[i] <= 90) {
-                if (sChar[i] + n >= 91) {
-                    sChar[i] += (-26 + n - n);
+            } else if (sChar[i] >= 'A' && sChar[i] <= 'Z') {
+                if (sChar[i] + n > 'Z') {
+                    sChar[i] += -26;
                 }
                 sChar[i] += n;
             }
